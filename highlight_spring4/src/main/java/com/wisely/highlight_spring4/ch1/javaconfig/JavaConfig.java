@@ -11,6 +11,7 @@ public class JavaConfig {
 		return new FunctionServcie();
 	}
 	
+	//容器中存在这个FunctionService 的Bean，就可以
 //	public UserFunctionService userFunctionService(FunctionServcie functionServcie) {
 //		UserFunctionService userFunctionService = new UserFunctionService();
 //		userFunctionService.setFunctionServcie(functionServcie);
@@ -19,7 +20,7 @@ public class JavaConfig {
 	
 	public UserFunctionService userFunctionService() {
 		UserFunctionService userFunctionService = new UserFunctionService();
-		userFunctionService.setFunctionServcie(functionServcie);
+		userFunctionService.setFunctionServcie(functionServcie());
 		return userFunctionService;
 	}
 }
