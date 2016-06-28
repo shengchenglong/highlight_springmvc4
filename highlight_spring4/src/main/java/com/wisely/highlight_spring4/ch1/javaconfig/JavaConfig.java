@@ -18,6 +18,7 @@ public class JavaConfig {
 //		return userFunctionService;
 //	}
 	
+	@Bean
 	public UserFunctionService userFunctionService() {
 		UserFunctionService userFunctionService = new UserFunctionService();
 		userFunctionService.setFunctionServcie(functionServcie());

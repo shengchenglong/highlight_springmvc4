@@ -18,5 +18,9 @@ public class UserFunctionService {
 		this.functionServcie = functionServcie;
 	}
 	
+	public String sayHello(String word) {
+		return functionServcie.sayHello(word);
+	}
+	
 	
 }
